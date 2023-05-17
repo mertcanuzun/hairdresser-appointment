@@ -30,20 +30,20 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import GoogleIcon from "@mui/icons-material/Google";
 
 // Material Kit 2 React components
-import MKBox from "../../../../../../components/MK/MKBox";
-import MKTypography from "../../../../../../components/MK/MKTypography";
-import MKInput from "../../../../../../components/MK/MKInput";
-import MKButton from "../../../../../../components/MK/MKButton";
+import MKBox from "../../../components/MK/MKBox";
+import MKTypography from "../../../components/MK/MKTypography";
+import MKInput from "../../../components/MK/MKInput";
+import MKButton from "../../../components/MK/MKButton";
 
 // Material Kit 2 React example components
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import SimpleFooter from "examples/Footers/SimpleFooter";
+import DefaultNavbar from "../../../examples/Navbars/DefaultNavbar";
+import SimpleFooter from "../../../examples/Footers/SimpleFooter";
 
 // Material Kit 2 React page layout routes
-import routes from "routes";
+import routes from "../../../routes";
 
 // Images
-import bgImage from "assets/images/bg-sign-in-basic.jpeg";
+import bgImage from "../../../assets/images/bg-sign-in-basic.jpeg";
 
 function SignInBasic() {
   const [rememberMe, setRememberMe] = useState(false);
