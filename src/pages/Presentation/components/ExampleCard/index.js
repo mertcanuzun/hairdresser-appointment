@@ -19,7 +19,7 @@ import PropTypes from "prop-types";
 // @mui material components
 import Tooltip from "@mui/material/Tooltip";
 
-// Material Kit 2 React components
+
 import MKBox from "../../../../components/MK/MKBox";
 import MKTypography from "../../../../components/MK/MKTypography";
 

@@ -8,23 +8,22 @@ import PropTypes from "prop-types";
 
 // @mui material components
 import Container from "@mui/material/Container";
-import Icon from "@mui/material/Icon";
 import Popper from "@mui/material/Popper";
 import Grow from "@mui/material/Grow";
 import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 import MuiLink from "@mui/material/Link";
 
-// Material Kit 2 React components
+
 import MKBox from "../../../components/MK/MKBox";
 import MKTypography from "../../../components/MK/MKTypography";
 import MKButton from "../../../components/MK/MKButton";
 
-// Material Kit 2 React example components
+
 import DefaultNavbarDropdown from "../../../examples/Navbars/DefaultNavbar/DefaultNavbarDropdown";
 import DefaultNavbarMobile from "../../../examples/Navbars/DefaultNavbar/DefaultNavbarMobile";
 
-// Material Kit 2 React base styles
+
 import breakpoints from "../../../assets/theme/base/breakpoints";
 
 function DefaultNavbar({
@@ -75,11 +74,10 @@ function DefaultNavbar({
   }, []);
 
   const renderNavbarItems = routes.map(
-    ({ name, icon, href, route, collapse }) => (
+    ({ name, href, route, collapse }) => (
       <DefaultNavbarDropdown
         key={name}
         name={name}
-        icon={icon}
         href={href}
         route={route}
         collapse={Boolean(collapse)}
@@ -269,18 +267,7 @@ function DefaultNavbar({
               ) : (
                 item.name
               )}
-              {item.collapse && (
-                <Icon
-                  fontSize="small"
-                  sx={{
-                    fontWeight: "normal",
-                    verticalAlign: "middle",
-                    mr: -0.5,
-                  }}
-                >
-                  keyboard_arrow_right
-                </Icon>
-              )}
+             
             </MKTypography>
           );
         });
@@ -325,11 +312,7 @@ function DefaultNavbar({
           }}
         >
           <MKBox borderRadius="lg">
-            <MKTypography variant="h1" color="white">
-              <Icon ref={setArrowRef} sx={{ mt: -3 }}>
-                arrow_drop_up
-              </Icon>
-            </MKTypography>
+           
             <MKBox shadow="lg" borderRadius="lg" p={2} mt={2}>
               {renderRoutes}
             </MKBox>
@@ -409,18 +392,7 @@ function DefaultNavbar({
                     ) : (
                       item.name
                     )}
-                    {item.collapse && (
-                      <Icon
-                        fontSize="small"
-                        sx={{
-                          fontWeight: "normal",
-                          verticalAlign: "middle",
-                          mr: -0.5,
-                        }}
-                      >
-                        keyboard_arrow_right
-                      </Icon>
-                    )}
+                    
                   </MKTypography>
                 );
               });
@@ -553,17 +525,7 @@ function DefaultNavbar({
                 </MKButton>
               ))}
           </MKBox>
-          <MKBox
-            display={{ xs: "inline-block", lg: "none" }}
-            lineHeight={0}
-            py={1.5}
-            pl={1.5}
-            color={transparent ? "white" : "inherit"}
-            sx={{ cursor: "pointer" }}
-            onClick={openMobileNavbar}
-          >
-            <Icon fontSize="default">{mobileNavbar ? "close" : "menu"}</Icon>
-          </MKBox>
+          
         </MKBox>
         <MKBox
           bgColor={transparent ? "white" : "transparent"}
@@ -584,7 +546,7 @@ function DefaultNavbar({
 
 // Setting default values for the props of DefaultNavbar
 DefaultNavbar.defaultProps = {
-  brand: "Material Kit 2",
+  brand: "Kuaför Salonu",
   transparent: false,
   light: false,
   action: false,

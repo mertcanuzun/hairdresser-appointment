@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 // @mui material components
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 React components
+
 import MKBox from "../../../../components/MK/MKBox";
 import MKAvatar from "../../../../components/MK/MKAvatar";
 import MKTypography from "../../../../components/MK/MKTypography";

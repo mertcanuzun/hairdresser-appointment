@@ -18,7 +18,7 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Tooltip from "@mui/material/Tooltip";
 
-// Material Kit 2 React components
+
 import MKBox from "../../../components/MK/MKBox";
 import MKButton from "../../../components/MK/MKButton";
 import MKTypography from "../../../components/MK/MKTypography";

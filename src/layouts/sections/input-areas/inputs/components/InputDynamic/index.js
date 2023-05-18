@@ -3,7 +3,7 @@ import React from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 React components
+
 import MKBox from "../../../../../../components/MK/MKBox";
 import MKInput from "../../../../../../components/MK/MKInput";
 

@@ -11,6 +11,7 @@ const MKTypography = forwardRef(
     {
       color,
       fontWeight,
+      fontFamily,
       textTransform,
       verticalAlign,
       textGradient,
@@ -41,6 +42,7 @@ const MKTypography = forwardRef(
 MKTypography.defaultProps = {
   color: "dark",
   fontWeight: false,
+  fontFamily: "default",
   textTransform: "none",
   verticalAlign: "unset",
   textGradient: false,
@@ -63,6 +65,7 @@ MKTypography.propTypes = {
     "white",
   ]),
   fontWeight: PropTypes.oneOf([false, "light", "regular", "medium", "bold"]),
+  fontFamily: PropTypes.oneOf(["serif", "sans-serif", "monospace", "cursive", "fantasy"]),
   textTransform: PropTypes.oneOf([
     "none",
     "capitalize",

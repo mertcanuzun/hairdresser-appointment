@@ -17,7 +17,7 @@ Coded by www.creative-tim.com
 import { createTheme } from "@mui/material/styles";
 // import Fade from "@mui/material/Fade";
 
-// Material Kit 2 React base styles
+
 import colors from "./base/colors";
 import breakpoints from "./base/breakpoints";
 import typography from "./base/typography";
@@ -25,14 +25,14 @@ import boxShadows from "./base/boxShadows";
 import borders from "./base/borders";
 import globals from "./base/globals";
 
-// Material Kit 2 React helper functions
+
 import boxShadow from "./functions/boxShadow";
 import hexToRgb from "./functions/hexToRgb";
 import linearGradient from "./functions/linearGradient";
 import pxToRem from "./functions/pxToRem";
 import rgba from "./functions/rgba";
 
-// Material Kit 2 React components base styles for @mui material components
+
 import list from "./components/list";
 import listItem from "./components/list/listItem";
 import listItemText from "./components/list/listItemText";

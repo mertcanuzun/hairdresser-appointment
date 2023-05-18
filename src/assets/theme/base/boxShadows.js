@@ -19,7 +19,7 @@ Coded by www.creative-tim.com
  * You can customized the box-shadow for the entire Material Kit 2 React using thie file.
  */
 
-// Material Kit 2 React Base Styles
+
 import colors from "./colors";
 
 // Material Kit 2 React Helper Functions

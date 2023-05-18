@@ -35,7 +35,7 @@ export default function App() {
             exact
             path={route.route}
             element={route.component}
-            key={route.key}
+            // key={route.key}
           />
         );
       }

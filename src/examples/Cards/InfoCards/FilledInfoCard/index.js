@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Icon from "@mui/material/Icon";
 import MuiLink from "@mui/material/Link";
 
-// Material Kit 2 React components
+
 import MKBox from "../../../../components/MK/MKBox";
 import MKTypography from "../../../../components/MK/MKTypography";
 

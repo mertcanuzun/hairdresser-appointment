@@ -1,6 +1,6 @@
 import Fade from "@mui/material/Fade";
 
-// Material Kit 2 React base styles
+
 import colors from "../base/colors";
 import typography from "../base/typography";
 import borders from "../base/borders";

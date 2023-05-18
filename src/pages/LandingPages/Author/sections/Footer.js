@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 
-// Material Kit 2 React components
+
 import MKBox from "../../../../components/MK/MKBox";
 import MKTypography from "../../../../components/MK/MKTypography";
 

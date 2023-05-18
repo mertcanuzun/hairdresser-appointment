@@ -9,7 +9,7 @@ import Card from "@mui/material/Card";
 import MuiLink from "@mui/material/Link";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 React components
+
 import MKBox from "../../../../components/MK/MKBox";
 import MKTypography from "../../../../components/MK/MKTypography";
 

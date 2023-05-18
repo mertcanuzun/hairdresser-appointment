@@ -10,11 +10,11 @@ import PropTypes from "prop-types";
 import Collapse from "@mui/material/Collapse";
 import MuiLink from "@mui/material/Link";
 
-// Material Kit 2 React components
+
 import MKBox from "../../../components/MK/MKBox";
 import MKTypography from "../../../components/MK/MKTypography";
 
-// Material Kit 2 React example components
+
 import DefaultNavbarDropdown from "../../../examples/Navbars/DefaultNavbar/DefaultNavbarDropdown";
 
 function DefaultNavbarMobile({ routes, open }) {

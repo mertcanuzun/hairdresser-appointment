@@ -1,4 +1,4 @@
-const navbarDarkCode = `// Material Kit 2 React components
+const navbarDarkCode = `
 import MKBox from "../../../../../../components/MK/MKBox";
 
 // Material Kit 2 React examples

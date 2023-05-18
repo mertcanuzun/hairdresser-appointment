@@ -32,13 +32,13 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Slide from "@mui/material/Slide";
 
-// Material Kit 2 React components
+
 import MKBox from "../../../../components/MK/MKBox";
 import MKAlert from "../../../../components/MK/MKAlert";
 import MKButton from "../../../../components/MK/MKButton";
 import MKTypography from "../../../../components/MK/MKTypography";
 
-// Material Kit 2 React base styles
+
 import colors from "../../../../assets/theme/base/colors";
 
 function View({ children, code, title, height, ...rest }) {

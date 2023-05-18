@@ -22,7 +22,7 @@ import Flatpickr from "react-flatpickr";
 // react-flatpickr styles
 import "flatpickr/dist/flatpickr.css";
 
-// Material Kit 2 React components
+
 import MKInput from "../../../../../../components/MK/MKInput";
 
 function MKDatePicker({ input, ...rest }) {

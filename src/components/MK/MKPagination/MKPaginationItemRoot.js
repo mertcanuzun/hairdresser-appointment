@@ -1,7 +1,7 @@
 // @mui material components
 import { styled } from "@mui/material/styles";
 
-// Material Kit 2 React components
+
 import MKButton from "../MKButton";
 
 export default styled(MKButton)(({ theme, ownerState }) => {

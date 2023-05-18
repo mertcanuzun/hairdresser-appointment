@@ -5,11 +5,11 @@ import PropTypes from "prop-types";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 React components
+
 import MKBox from "../../../../components/MK/MKBox";
 import MKTypography from "../../../../components/MK/MKTypography";
 // Material Kit 2 React examples
-import DefaultNavbar from "../../../../examples/Navbars/DefaultNavbar";
+// import DefaultNavbar from "../../../../examples/Navbars/DefaultNavbar";
 import CenteredFooter from "../../../../examples/Footers/CenteredFooter";
 import Breadcrumbs from "../../../../examples/Breadcrumbs";
 
@@ -24,7 +24,7 @@ function BaseLayout({ breadcrumb, title, children }) {
       bgColor="white"
       minHeight="100vh"
     >
-      <MKBox bgColor="white" shadow="sm" py={0.25}>
+      {/* <MKBox bgColor="white" shadow="sm" py={0.25}>
         <DefaultNavbar
           routes={routes}
           action={{
@@ -36,7 +36,7 @@ function BaseLayout({ breadcrumb, title, children }) {
           transparent
           relative
         />
-      </MKBox>
+      </MKBox> */}
       <Container sx={{ mt: 6 }}>
         <Grid
           container

@@ -43,10 +43,11 @@ import Icon from "@mui/material/Icon";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Pages
-import AboutUs from "./pages/LandingPages/AboutUs";
+import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/LandingPages/ContactUs";
 import Author from "./pages/LandingPages/Author";
 import SignIn from "./pages/LandingPages/SignIn";
+import Services from "./pages/Services";
 
 // Sections
 import PageHeaders from "./layouts/sections/page-sections/page-headers";
@@ -78,11 +79,7 @@ const routes = [
       {
         name: "landing pages",
         collapse: [
-          {
-            name: "about us",
-            route: "/pages/landing-pages/about-us",
-            component: <AboutUs />,
-          },
+         
           {
             name: "contact us",
             route: "/pages/landing-pages/contact-us",
@@ -265,9 +262,14 @@ const routes = [
     ],
   },
   {
-    name: "github",
-    icon: <GitHubIcon />,
-    href: "https://www.github.com/creativetimofficial/material-kit-react",
+    name: "hakkımızda",
+    route: "/about-us",
+    component: <AboutUs/>
+  },
+  {
+    name: "hizmetlerimiz",
+    route: "/services",
+    component: <Services/>
   },
 ];
 
