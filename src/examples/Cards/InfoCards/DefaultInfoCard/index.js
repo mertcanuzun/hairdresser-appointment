@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 // @mui material components
 import Icon from "@mui/material/Icon";
 
-
 import MKBox from "../../../../components/MK/MKBox";
 import MKTypography from "../../../../components/MK/MKTypography";
 
@@ -22,7 +21,7 @@ function DefaultInfoCard({
       p={direction === "center" ? 2 : 0}
       textAlign={direction}
     >
-      {typeof icon === "string" ? (
+      {/* {typeof icon === "string" ? (
         <MKTypography
           display="block"
           variant={direction === "center" ? "h2" : "h3"}
@@ -34,20 +33,22 @@ function DefaultInfoCard({
         </MKTypography>
       ) : (
         icon
-      )}
+      )} */}
       <MKTypography
-        display="block"
-        variant="5"
+        display="flex"
+        justifyContent="center"
+        variant="h2"
+        color="white"
         fontWeight="bold"
         mt={direction === "center" ? 1 : 2}
-        mb={1.5}
+        mb={4}
       >
         {title}
       </MKTypography>
       <MKTypography
-        display="block"
+        display="flex"
         variant={small ? "button" : "body2"}
-        color="text"
+        color="white"
         pr={direction === "left" ? 6 : 0}
         pl={direction === "right" ? 6 : 0}
       >

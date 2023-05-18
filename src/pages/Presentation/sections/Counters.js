@@ -18,7 +18,6 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 
-
 import MKBox from "../../../components/MK/MKBox";
 
 // Material Kit 2 React examples
@@ -29,35 +28,20 @@ function Counters() {
     <MKBox component="section" py={3}>
       <Container>
         <Grid container item xs={12} lg={9} sx={{ mx: "auto" }}>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={6}>
             <DefaultCounterCard
-              count={70}
+              count={33}
               suffix="+"
-              title="Coded Elements"
-              description="From buttons, to inputs, navbars, alerts or cards, you are covered"
+              title="Çalışan Sayımız"
+              description="Birbirinden yetenekli ve eğitimli çalışan arkadaşlarımız"
             />
           </Grid>
-          <Grid item xs={12} md={4} display="flex">
-            <Divider
-              orientation="vertical"
-              sx={{ display: { xs: "none", md: "block" }, mx: 0 }}
-            />
+          <Grid item xs={12} md={6} display="flex">
             <DefaultCounterCard
-              count={15}
+              count={3}
               suffix="+"
-              title="Design Blocks"
-              description="Mix the sections, change the colors and unleash your creativity"
-            />
-            <Divider
-              orientation="vertical"
-              sx={{ display: { xs: "none", md: "block" }, ml: 0 }}
-            />
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <DefaultCounterCard
-              count={4}
-              title="Pages"
-              description="Save 3-4 weeks of work when you use our pre-made pages for your website"
+              title="Salonlarımız"
+              description="Dizayni ve konforu ile ön plana çıkan salonlarımız"
             />
           </Grid>
         </Grid>

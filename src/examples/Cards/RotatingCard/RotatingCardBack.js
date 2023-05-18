@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 // @mui material components
 import MuiLink from "@mui/material/Link";
 
-
 import MKBox from "../../../components/MK/MKBox";
 import MKTypography from "../../../components/MK/MKTypography";
 import MKButton from "../../../components/MK/MKButton";
@@ -47,10 +46,10 @@ function RotatingCard({ color, image, title, description, action }) {
       }}
     >
       <MKBox pt={12} pb={2} px={2} textAlign="center" lineHeight={1}>
-        <MKTypography variant="h3" color="white" gutterBottom>
+        <MKTypography variant="h3" color="black" gutterBottom>
           {title}
         </MKTypography>
-        <MKTypography variant="body2" color="white" opacity={0.8}>
+        <MKTypography variant="body2" color="black" opacity={0.8}>
           {description}
         </MKTypography>
         {action && (
@@ -71,7 +70,7 @@ function RotatingCard({ color, image, title, description, action }) {
               <MKButton
                 component={Link}
                 to={action.route}
-                color="white"
+                color="black"
                 size="small"
                 fullWidth
               >

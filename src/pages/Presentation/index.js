@@ -2,49 +2,29 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
-
 import MKBox from "../../components/MK/MKBox";
 import MKTypography from "../../components/MK/MKTypography";
-import MKSocialButton from "../../components/MK/MKSocialButton";
 
-// Material Kit 2 React examples
 import DefaultNavbar from "../../examples/Navbars/DefaultNavbar";
 import DefaultFooter from "../../examples/Footers/DefaultFooter";
-import FilledInfoCard from "../../examples/Cards/InfoCards/FilledInfoCard";
 
-// Presentation page sections
 import Counters from "../../pages/Presentation/sections/Counters";
 import Information from "../../pages/Presentation/sections/Information";
-import DesignBlocks from "../../pages/Presentation/sections/DesignBlocks";
-import Pages from "../../pages/Presentation/sections/Pages";
-import Testimonials from "../../pages/Presentation/sections/Testimonials";
-import Download from "../../pages/Presentation/sections/Download";
-
-// Presentation page components
-import BuiltByDevelopers from "../../pages/Presentation/components/BuiltByDevelopers";
 
 // Routes
 import routes from "../../routes";
 import footerRoutes from "../../footer.routes";
 
 // Images
-import bgImage from "../../assets/images/bg-presentation.jpg";
+import bgImage from "../../assets/images/home-image.jpg";
+import AnatomicalHairCut from "./sections/AnatomicalHairCut";
 
 function Presentation() {
   return (
     <>
-      <DefaultNavbar
-        routes={routes}
-        // action={{
-        //   type: "external",
-        //   route: "https://www.creative-tim.com/product/material-kit-react",
-        //   label: "free download",
-        //   color: "info",
-        // }}
-        sticky
-      />
+      <DefaultNavbar routes={routes} sticky />
       <MKBox
-        minHeight="75vh"
+        minHeight="100vh"
         width="100%"
         sx={{
           backgroundImage: `url(${bgImage})`,
@@ -67,17 +47,16 @@ function Presentation() {
                 },
               })}
             >
-              Material Kit 2 React{" "}
+              KUAFÖR SALONU{" "}
             </MKTypography>
             <MKTypography
               variant="body1"
-              color="white"
+              color="black"
               textAlign="center"
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join
-              over 1.6 million developers around the world.
+              Dilediğiniz Saç Kesimleri ve En Konforlu Hizmetlerle Sizlerleyiz.
             </MKTypography>
           </Grid>
         </Container>
@@ -96,8 +75,8 @@ function Presentation() {
       >
         <Counters />
         <Information />
-        <DesignBlocks />
-        <Pages />
+        <AnatomicalHairCut />
+        {/* <Pages />
         <Container sx={{ mt: 6 }}>
           <BuiltByDevelopers />
         </Container>
@@ -207,7 +186,7 @@ function Presentation() {
               </Grid>
             </Grid>
           </Container>
-        </MKBox>
+        </MKBox> */}
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />

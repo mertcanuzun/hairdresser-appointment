@@ -17,7 +17,6 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-
 import MKBox from "../../../components/MK/MKBox";
 
 // Material Kit 2 React examples
@@ -27,12 +26,12 @@ import RotatingCardBack from "../../../examples/Cards/RotatingCard/RotatingCardB
 import DefaultInfoCard from "../../../examples/Cards/InfoCards/DefaultInfoCard";
 
 // Images
-import bgFront from "../../../assets/images/rotating-card-bg-front.jpeg";
-import bgBack from "../../../assets/images/rotating-card-bg-back.jpeg";
+import bgFront from "../../../assets/images/home-page-img.jpg";
+import bgBack from "../../../assets/images/home-page-image.jpeg";
 
 function Information() {
   return (
-    <MKBox component="section" py={6} my={6}>
+    <MKBox component="section" py={6} my={6} bgColor="secondary">
       <Container>
         <Grid
           container
@@ -44,61 +43,26 @@ function Information() {
         >
           <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
             <RotatingCard>
-              <RotatingCardFront
-                image={bgFront}
-                icon="touch_app"
-                title={
-                  <>
-                    Feel the
-                    <br />
-                    Material Kit
-                  </>
-                }
-                description="All the MUI components that you need in a development have been re-design with the new look."
-              />
+              <RotatingCardFront image={bgFront} color="dark" />
               <RotatingCardBack
                 image={bgBack}
-                title="Discover More"
-                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                color="light"
+                title="Biz Kimiz?"
+                description="Saç Kesiminde en iyisiz."
                 action={{
                   type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "start with header",
+                  route: "/about-us",
+                  label: "Daha Fazla Bilgi İçin",
                 }}
               />
             </RotatingCard>
           </Grid>
           <Grid item xs={12} lg={7} sx={{ ml: "auto" }}>
             <Grid container spacing={3}>
-              <Grid item xs={12} md={6}>
+              <Grid item xs={12} md={12}>
                 <DefaultInfoCard
-                  icon="content_copy"
-                  title="Full Documentation"
-                  description="Built by developers for developers. Check the foundation and you will find
-                    everything inside our documentation."
-                />
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="flip_to_front"
-                  title="MUI Ready"
-                  description="The world's most popular react components library for building user interfaces."
-                />
-              </Grid>
-            </Grid>
-            <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="price_change"
-                  title="Save Time & Money"
-                  description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
-                />
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="devices"
-                  title="Fully Responsive"
-                  description="Regardless of the screen size, the website content will naturally fit the given resolution."
+                  title="Biz Kimiz?"
+                  description="2000 yılı İstanbul doğumlu, 12 yaşındayken 1935 yılında dedesi ile başlayıp, babasıyla devam eden kuaförlük serüvenini sürdürmüş ama aynı zamanda eğitim hayatına devam etmiştir. Sonucunda Kocaeli Üni. Bilgisayar Programcılığı, Anadolu Üni. İşletme Fakültelerini ve Başkent Üniversitesi Eğitim Koçluğu bitirmiştir. Eğitim hayatında bir dönüm noktası belirleyip dede mesleği kuaförlük üzerine rotasını çizip bu işi de eğitimli, donanımlı bir şekilde yapmayı öngörmüştür. Bu düşünce akabinde, diksiyon eğitimi ve beden dili, yurt içi ve yurt dışı bir çok akademi ve eğitmenden teknik kesim, renklendirme ve ürün eğitimlerini tamamlamıştır. 2015 te İtalya'da gerçekleşen organizasyonda Türk Ekibi üyesi olarak, ülkemize dünya ikinciliğini getirdi."
                 />
               </Grid>
             </Grid>
