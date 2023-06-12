@@ -1,8 +1,8 @@
 import React from "react";
+import "./index.css";
 import * as ReactDOMClient from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
-import "./tailwind.css"
 
 const container = document.getElementById("root");
 
