@@ -23,11 +23,12 @@ import bgImage from "../../../assets/images/bg-sign-in-basic.jpeg";
 
 import Validation from "../sections/Validation";
 
-function SignInBasic() {
+function SignUpBasic() {
   const [rememberMe, setRememberMe] = useState(false);
   const [values, setValues] = useState({
     email: "",
     password: "",
+    name: "",
   });
   const [errors, setErrors] = useState({});
   const handleInput = (event) => {
@@ -110,7 +111,7 @@ function SignInBasic() {
                   color="white"
                   mt={1}
                 >
-                  Giriş yap
+                  Kayıt Ol
                 </MKTypography>
                 <Grid
                   container
@@ -121,6 +122,18 @@ function SignInBasic() {
               </MKBox>
               <MKBox pt={4} pb={3} px={3}>
                 <MKBox component="form" role="form">
+                  <MKBox mb={2}>
+                    <MKInput
+                      onChange={handleInput}
+                      type="text"
+                      label="Ad Soyad"
+                      name="name"
+                      fullWidth
+                    />
+                    {errors.name && (
+                      <span className="text-red-500">{errors.name}</span>
+                    )}
+                  </MKBox>
                   <MKBox mb={2}>
                     <MKInput
                       onChange={handleInput}
@@ -142,7 +155,7 @@ function SignInBasic() {
                       fullWidth
                     />
                     {errors.password && (
-                      <span className="text-red-600">{errors.password}</span>
+                      <span className="text-red-500">{errors.password}</span>
                     )}
                   </MKBox>
                   <MKBox display="flex" alignItems="center" ml={-1}>
@@ -167,21 +180,21 @@ function SignInBasic() {
                       color="info"
                       fullWidth
                     >
-                      Giriş Yap
+                      Kayıt Ol
                     </MKButton>
                   </MKBox>
                   <MKBox mt={3} mb={1} textAlign="center">
                     <MKTypography variant="button" color="text">
-                      Hesabın Yok Mu?
+                      Hesabın Var Mı?{" "}
                       <MKTypography
                         component={Link}
-                        to="/sign-up"
+                        to="/sign-in"
                         variant="button"
                         color="info"
                         fontWeight="medium"
                         textGradient
                       >
-                        Kayıt Ol
+                        Giriş Yap
                       </MKTypography>
                     </MKTypography>
                   </MKBox>
@@ -198,4 +211,4 @@ function SignInBasic() {
   );
 }
 
-export default SignInBasic;
+export default SignUpBasic;

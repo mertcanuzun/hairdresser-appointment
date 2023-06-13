@@ -66,7 +66,7 @@ const Reservation = () => {
                 </Stack>
               </Grid>
               <Grid item xs={12} md={12}>
-                <Stack direction="row" mt={4} justifyContent="center">
+                <Stack direction="row" mt={8} justifyContent="center">
                   <Button size="large" onClick={() => setOpen(true)}>
                     Randevu Al
                   </Button>

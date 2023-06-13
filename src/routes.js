@@ -44,6 +44,7 @@ import Services from "./pages/Services";
 // Sections
 
 import Reservation from "./pages/Reservation";
+import SignUpBasic from "./pages/LandingPages/SignUp";
 
 const routes = [
   {
@@ -62,9 +63,14 @@ const routes = [
     component: <Reservation />,
   },
   {
-    name: "kayıt Ol",
+    name: "giriş yap",
     route: "/sign-in",
     component: <SignIn />,
+  },
+  {
+    name: "kayıt Ol",
+    route: "/sign-up",
+    component: <SignUpBasic />,
   },
 ];
 
