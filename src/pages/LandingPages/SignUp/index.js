@@ -1,7 +1,8 @@
 import { useState } from "react";
 
 // react-router-dom components
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 // @mui material components
 import Card from "@mui/material/Card";
@@ -30,6 +31,7 @@ function SignUpBasic() {
     password: "",
     name: "",
   });
+  const navigate = useNavigate();
   const [errors, setErrors] = useState({});
   const handleInput = (event) => {
     setValues((prev) => ({
@@ -40,7 +42,17 @@ function SignUpBasic() {
   const handleSubmit = (event) => {
     event.preventDefault();
     setErrors(Validation(values));
+    console.log("second");
+
+    // if (errors.name === "" && errors.email === "" && errors.password === "") {
+    axios
+      .post("http://localhost:8081/sign-up", values)
+      .then((res) => {
+        navigate("/");
+      })
+      .catch((err) => console.log(err));
   };
+  // };
   const handleSetRememberMe = () => setRememberMe(!rememberMe);
 
   return (
@@ -154,9 +166,6 @@ function SignUpBasic() {
                       name="password"
                       fullWidth
                     />
-                    {errors.password && (
-                      <span className="text-red-500">{errors.password}</span>
-                    )}
                   </MKBox>
                   <MKBox display="flex" alignItems="center" ml={-1}>
                     <Switch

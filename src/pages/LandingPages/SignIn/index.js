@@ -1,7 +1,8 @@
 import { useState } from "react";
 
 // react-router-dom components
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 // @mui material components
 import Card from "@mui/material/Card";
@@ -29,6 +30,7 @@ function SignInBasic() {
     email: "",
     password: "",
   });
+  const navigate = useNavigate();
   const [errors, setErrors] = useState({});
   const handleInput = (event) => {
     setValues((prev) => ({
@@ -39,6 +41,15 @@ function SignInBasic() {
   const handleSubmit = (event) => {
     event.preventDefault();
     setErrors(Validation(values));
+    // if (errors.name === "" && errors.email === "" && errors.password === "") {
+    axios
+      .post("http://localhost:8081/sign-in", values)
+      .then((res) => {
+        res.data === "Success"
+          ? navigate("/")
+          : alert("Böyle bir kayıt bulunmamaktadır");
+      })
+      .catch((err) => console.log(err));
   };
   const handleSetRememberMe = () => setRememberMe(!rememberMe);
 
